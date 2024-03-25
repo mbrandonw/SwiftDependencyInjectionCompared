@@ -11,7 +11,7 @@ let package = Package(
     name: name,
     platforms: [
         .macOS(.v14),
-        .iOS(.v15),
+        .iOS(.v17),
         .visionOS(.v1),
         .tvOS(.v15),
         .watchOS(.v10)
@@ -23,8 +23,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "git@github.com:apple/swift-async-algorithms", from: "1.0.0")//,
-        //.package(url: "https://github.com/apple/swift-async-algorithms", from: "1.0.0")
+//        .package(url: "git@github.com:apple/swift-async-algorithms", from: "1.0.0")//,
+        .package(url: "https://github.com/apple/swift-async-algorithms", from: "1.0.0")
     ],
     targets: [
         .target(
